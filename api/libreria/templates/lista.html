@@ -1,0 +1,9 @@
+{% extends 'templates/base.html' %}
+{% block content %}
+    <h2 style="color: black;">Libros</h2>
+    <ul >
+    {% for obj in object_list %}
+        <li style="color: black;">{{ obj.nombre  }}</li>
+    {% endfor%}
+    </ul>
+{% endblock %}
